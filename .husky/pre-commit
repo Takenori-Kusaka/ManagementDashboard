@@ -1,4 +1,8 @@
 #!/bin/sh
+echo "Current PATH: $PATH"
+which npx
+which node
+export PATH="/c/Program Files/nodejs:$PATH"
 . "$(dirname "$0")/_/husky.sh"
 
 npx --no-install lint-staged
